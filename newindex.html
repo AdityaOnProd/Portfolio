@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Aditya Kumar Soni | DevOps Engineer at Tech Mahindra</title>
+    <meta name="description" content="Official portfolio of Aditya Kumar Soni, DevOps Engineer at Tech Mahindra. View my professional experience, projects, and connect with me.">
+    <link rel="canonical" href="https://adityakumarsoni.com/">
+    
+    <!-- Open Graph (For LinkedIn/Twitter link previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adityakumarsoni.com/">
+    <meta property="og:title" content="Aditya Kumar Soni | DevOps Engineer at Tech Mahindra">
+    <meta property="og:description" content="Official portfolio of Aditya Kumar Soni. View my professional engineering journey.">
+    <meta property="og:image" content="https://adityakumarsoni.com/aditya-kumar-soni-tech-mahindra.jpg">
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD Entity Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aditya Kumar Soni",
+      "url": "https://adityakumarsoni.com",
+      "image": "https://adityakumarsoni.com/aditya-kumar-soni-tech-mahindra.jpg",
+      "jobTitle": "DevOps Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Tech Mahindra"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/aditya-kumar-soni"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <!-- Floating Glassmorphic Navigation -->
+    <nav class="fixed top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:right-auto md:w-auto z-50 bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-full px-6 py-3 flex items-center justify-between md:justify-center gap-6 md:gap-10 shadow-sm overflow-x-auto whitespace-nowrap">
+        <a href="#" class="font-bold text-slate-900 tracking-tight text-xl">AKS.</a>
+        <div class="flex gap-6 text-sm font-medium">
+            <a href="#about" class="text-slate-500 hover:text-blue-600 transition">About</a>
+            <a href="#skills" class="text-slate-500 hover:text-blue-600 transition">Skills</a>
+            <a href="#experience" class="text-slate-500 hover:text-blue-600 transition">Timeline</a>
+            <!-- <a href="#certifications" class="text-slate-500 hover:text-blue-600 transition">Certs</a> -->
+            <a href="https://www.linkedin.com/in/aditya-kumar-soni" target="_blank" class="text-blue-600 hover:text-blue-800 transition">LinkedIn</a>
+        </div>
+    </nav>
+
+    <!-- Professional Hero Section -->
+    <header class="relative max-w-5xl mx-auto px-4 pt-32 pb-12 md:pt-40 md:pb-20 flex flex-col-reverse md:flex-row items-center gap-12 z-10">
+        <!-- Left Text Content -->
+        <div class="flex-1 space-y-5">
+            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white border border-slate-200 text-sm font-medium text-slate-700 shadow-sm">
+                <!-- Tech Mahindra Logo (Local) -->
+                <img src="techm-logo.png" alt="Tech Mahindra" class="h-3.5 md:h-4">
+                <span class="border-l border-slate-300 pl-3">DevOps Engineer</span>
+            </div>
+            
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]">
+                Hi, I'm Aditya. <br>
+                I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">resilient</span> systems.
+            </h2>
+            
+            <p class="text-lg text-slate-600 leading-relaxed max-w-lg">
+                Bridging the gap between complex application code and scalable, bulletproof cloud infrastructure.
+            </p>
+            
+            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                <a href="#experience" class="bg-blue-600 text-white px-7 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-sm text-center">View Timeline</a>
+                <a href="#writing" class="bg-white border border-slate-200 text-slate-700 px-7 py-3 rounded-lg font-medium hover:bg-slate-50 transition shadow-sm text-center">Read my Articles</a>
+            </div>
+        </div>
+
+        <!-- Right Image Area -->
+        <div class="flex-none relative group">
+            <div class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            <img src="aditya-kumar-soni-tech-mahindra.jpg" alt="Aditya Kumar Soni" class="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl border-4 border-white">
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="bg-white border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 py-16 md:py-20">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">About Me</h2>
+                
+                <div class="space-y-4 text-base md:text-lg text-slate-600 leading-relaxed font-light">
+                    <p>
+                        I am a DevOps Engineer at Tech Mahindra with a deep background in core software development. My journey began in the code—resolving complex application bugs, modeling databases, and building scalable backend APIs using Java and Spring Boot.
+                    </p>
+                    <p>
+                        Driven by a need for system reliability, my focus naturally evolved toward scalability. By profiling application behavior and analyzing bottlenecks under high traffic, I learned what it takes to keep enterprise architectures from breaking. Today, I combine that deep understanding of system limits with modern DevOps practices to architect automated CI/CD pipelines and resilient cloud infrastructure.
+                    </p>
+                    <p>
+                        Beyond enterprise infrastructure, I bring a strong builder's mindset to every project—whether automating cloud deployments, launching digital products, or scaling brand initiatives from zero to one.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contextual Skills Section -->
+    <section id="skills" class="max-w-5xl mx-auto px-4 py-16 md:py-24 border-b border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Core Competencies</h2>
+        
+        <!-- Updated to a 2x2 grid for 4 cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Category 1: Cloud & DevOps -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mb-6 border border-purple-100">
+                    <svg viewBox="0 0 24 24" class="w-6 h-6 text-purple-600" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 19C19.9853 19 22 16.9853 22 14.5C22 12.1332 20.1772 10.2017 17.8596 10.0272C17.4398 6.61528 14.5317 4 11 4C7.13401 4 4 7.13401 4 11C4 11.2312 4.01121 11.4599 4.03295 11.6853C2.29654 12.284 1 13.9789 1 16C1 18.2091 2.79086 20 5 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-5 border-b border-slate-100 pb-2">Cloud & DevOps</h3>
+                
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">CI/CD & Jenkins</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-50 text-purple-700 border border-purple-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Engineered 150+ automated pipelines, reducing deployment times by up to 40%.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">Docker & Kubernetes</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-50 text-purple-700 border border-purple-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Automated containerization and deployment for over 100 microservices.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">AWS & Terraform</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-50 text-purple-700 border border-purple-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Provisioned resilient, scalable enterprise cloud infrastructure as code.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Backend & DB -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-6 border border-blue-100">
+                    <svg viewBox="0 0 24 24" class="w-6 h-6 text-blue-600" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12C21 13.6569 16.9706 15 12 15C7.02944 15 3 13.6569 3 12M21 5C21 6.65685 16.9706 8 12 8C7.02944 8 3 6.65685 3 5M21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5M21 5V19C21 20.6569 16.9706 22 12 22C7.02944 22 3 20.6569 3 19V5M21 19C21 17.3431 16.9706 16 12 16C7.02944 16 3 17.3431 3 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-5 border-b border-slate-100 pb-2">Backend & Architecture</h3>
+                
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">Java & Spring Boot</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Architected scalable backend features and APIs to support complex microservice ecosystems.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">MySQL & PostgreSQL</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Engineered complex queries and optimized relational data modeling.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">Neo4j</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Leveraged graph databases for advanced relationship mapping and traversal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Performance -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center mb-6 border border-red-100">
+                    <svg viewBox="0 0 24 24" class="w-6 h-6 text-red-600" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 19V5M9 19V11M14 19V15M19 19V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-5 border-b border-slate-100 pb-2">System Reliability</h3>
+                
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">System Tuning & Scaling</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-700 border border-red-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Hardened enterprise architectures to withstand massive traffic spikes and load scenarios.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">JVM Profiling</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-700 border border-red-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Hunted memory leaks and optimized garbage collection for peak efficiency.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">Grafana Monitoring</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-700 border border-red-100">2 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Visualized critical load metrics to drive infrastructure scaling decisions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: AI & Agentic Engineering (NEW) -->
+            <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 border border-emerald-100">
+                    <svg viewBox="0 0 24 24" class="w-6 h-6 text-emerald-600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 10L12 4L10 10L4 12L10 14L12 20L14 14L20 12L14 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L5.5 4.5L4 4L5.5 3.5L6 2L6.5 3.5L8 4L6.5 4.5L6 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 22L18.5 19.5L16 19L18.5 18.5L19 16L19.5 18.5L22 19L19.5 19.5L19 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-5 border-b border-slate-100 pb-2">Applied AI</h3>
+                
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">RAG Architectures</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">1.5 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Engineered retrieval-augmented generation pipelines to ground LLMs in proprietary data.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">Model Context Protocol</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">1.5 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Integrated standardized MCP for seamless and secure AI-agent data interactions.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="text-sm font-bold text-slate-800">Agentic Workflows</h4>
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">1.5 YOE</span>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed">Developed autonomous AI toolchains for complex, multi-step problem solving.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Experience Section (Professional Timeline) -->
+    <section id="experience" class="max-w-5xl mx-auto px-4 py-16 md:py-24 border-b border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">Professional Timeline</h2>
+        
+        <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden mb-6">
+            
+            <!-- Tech Mahindra Header Button -->
+            <button onclick="toggleAccordion('company-techm', 'arrow-techm')" class="w-full text-left p-5 md:p-8 bg-slate-50 hover:bg-slate-100 transition cursor-pointer flex justify-between items-start focus:outline-none group">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Tech Mahindra</h3>
+                    <p class="text-sm text-slate-600 mt-1 font-medium">
+                        Core Enterprise Project <span class="text-slate-400 font-normal mx-2">|</span> Backend to DevOps
+                    </p>
+                    <p class="text-sm text-slate-500 mt-1 pr-4 font-light">
+                        Click to view my continuous progression within the same large-scale project across 4 distinct roles.
+                    </p>
+                </div>
+                <svg id="arrow-techm" class="w-6 h-6 text-slate-400 transform transition-transform duration-300 rotate-180 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <!-- Nested Content (Stats + Timeline) -->
+            <div id="company-techm" class="max-h-[2000px] opacity-100 overflow-hidden transition-all duration-700 ease-in-out">
+                
+                <!-- NEW: Integrated Project Stats & Logos -->
+                <div class="px-5 md:px-8 pt-6 pb-8 border-b border-slate-100 bg-white">
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-slate-100 text-center">
+                        <div class="pt-2 md:pt-0">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">150+</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Pipelines Built</div>
+                        </div>
+                        <div class="pt-2 md:pt-0">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">100+</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Microservices</div>
+                        </div>
+                        <div class="pt-4 md:pt-0">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">40%</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Faster Deploys</div>
+                        </div>
+                        <div class="pt-4 md:pt-0">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">4</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Roles Conquered</div>
+                        </div>
+                    </div>
+
+                    <!-- Core Technologies -->
+                    <div class="mt-8 pt-6 border-t border-slate-100">
+                        <p class="text-center text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">Core Technologies Leveraged</p>
+                        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="h-6 md:h-8">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" class="h-8 md:h-10">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker" class="h-6 md:h-8">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="Terraform" class="h-8 md:h-10">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="h-10 md:h-12">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg" alt="Jenkins" class="h-8 md:h-10">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Vertical Timeline -->
+                <div class="px-4 md:px-8 pb-8 bg-white">
+                    <div class="relative border-l-2 border-sky-400 ml-2 md:ml-4 mt-8 space-y-8">
+                        
+                        <!-- Role 4: DevOps -->
+                        <div class="relative pl-6 md:pl-10 group">
+                            <div id="dot-devops" onclick="toggleTimeline('role-devops', 'dot-devops')" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-2 border-sky-500 bg-sky-500 ring-4 ring-white transition-colors duration-300 cursor-pointer"></div>
+                            
+                            <button onclick="toggleTimeline('role-devops', 'dot-devops')" class="w-full text-left focus:outline-none">
+                                <span class="text-xs font-semibold text-sky-600 tracking-wide uppercase">Current Role</span>
+                                <h4 class="text-base md:text-lg font-semibold text-slate-900 mt-0.5 group-hover:text-sky-600 transition">DevOps Engineer</h4>
+                            </button>
+                            
+                            <div id="role-devops" class="max-h-[500px] opacity-100 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="pt-3 pb-2 space-y-3">
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Spearheaded the transition to automated cloud infrastructure, taking full ownership of the deployment lifecycle. Engineered and maintained <strong class="font-semibold text-slate-800">150+ robust CI/CD pipelines</strong> using Jenkins and GitLab CI.
+                                    </p>
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Successfully automated the containerization and deployment orchestration of <strong class="font-semibold text-slate-800">100+ microservices</strong> via Docker and Kubernetes on AWS, ultimately <strong class="font-semibold text-slate-800">reducing overall deployment times by 40%</strong> while ensuring zero-downtime releases.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role 3: Performance -->
+                        <div class="relative pl-6 md:pl-10 group">
+                            <div id="dot-perf" onclick="toggleTimeline('role-perf', 'dot-perf')" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-2 border-sky-500 bg-white ring-4 ring-white transition-colors duration-300 cursor-pointer"></div>
+                            
+                            <button onclick="toggleTimeline('role-perf', 'dot-perf')" class="w-full text-left focus:outline-none">
+                                <span class="text-xs font-medium text-slate-500 tracking-wide uppercase">Phase 3</span>
+                                <h4 class="text-base md:text-lg font-semibold text-slate-900 mt-0.5 group-hover:text-sky-600 transition">Performance Testing Engineer</h4>
+                            </button>
+                            
+                            <div id="role-perf" class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="pt-3 pb-2 space-y-3">
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Owned system reliability and load capacity for critical enterprise applications. Designed and executed high-concurrency stress tests using <strong class="font-semibold text-slate-800">Apache JMeter</strong> to proactively identify architectural limits.
+                                    </p>
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Utilized <strong class="font-semibold text-slate-800">JVM Profiling and Grafana</strong> monitoring to hunt down memory leaks and database bottlenecks, driving scaling decisions that ensured backend systems could withstand massive traffic spikes without degradation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role 2: Backend Dev -->
+                        <div class="relative pl-6 md:pl-10 group">
+                            <div id="dot-backend" onclick="toggleTimeline('role-backend', 'dot-backend')" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-2 border-sky-500 bg-white ring-4 ring-white transition-colors duration-300 cursor-pointer"></div>
+                            
+                            <button onclick="toggleTimeline('role-backend', 'dot-backend')" class="w-full text-left focus:outline-none">
+                                <span class="text-xs font-medium text-slate-500 tracking-wide uppercase">Phase 2</span>
+                                <h4 class="text-base md:text-lg font-semibold text-slate-900 mt-0.5 group-hover:text-sky-600 transition">Backend Developer</h4>
+                            </button>
+                            
+                            <div id="role-backend" class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="pt-3 pb-2 space-y-3">
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Architected and developed scalable RESTful APIs and core microservices utilizing <strong class="font-semibold text-slate-800">Advanced Java and the Spring Boot</strong> framework. 
+                                    </p>
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Took ownership of delivering high-performance backend features, integrating complex data flows, and ensuring secure, seamless communication across distributed enterprise systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role 1: Bug Fixing -->
+                        <div class="relative pl-6 md:pl-10 group">
+                            <div id="dot-bug" onclick="toggleTimeline('role-bug', 'dot-bug')" class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-2 border-sky-500 bg-white ring-4 ring-white transition-colors duration-300 cursor-pointer"></div>
+                            
+                            <button onclick="toggleTimeline('role-bug', 'dot-bug')" class="w-full text-left focus:outline-none">
+                                <span class="text-xs font-medium text-slate-500 tracking-wide uppercase">Phase 1</span>
+                                <h4 class="text-base md:text-lg font-semibold text-slate-900 mt-0.5 group-hover:text-sky-600 transition">Software Engineer (Core & DB)</h4>
+                            </button>
+                            
+                            <div id="role-bug" class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="pt-3 pb-2 space-y-3">
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Built a strong foundation in system architecture by performing root-cause analysis and high-level bug fixing on complex legacy codebases.
+                                    </p>
+                                    <p class="text-sm md:text-base text-slate-600 leading-relaxed font-light">
+                                        Optimized relational and graph data models across diverse environments, executing advanced querying in <strong class="font-semibold text-slate-800">MySQL, PostgreSQL, and Neo4j</strong> to drastically improve data retrieval times and backend efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Blog & Articles Section (Dynamic) -->
+    <section id="writing" class="max-w-5xl mx-auto px-4 py-16 md:py-24">
+        <div class="flex justify-between items-end mb-8">
+            <h2 class="text-2xl font-bold text-slate-900">Articles & Writing</h2>
+            <a href="https://adityakumarsoni.medium.com/" target="_blank" class="text-sm font-medium text-blue-600 hover:text-blue-800 transition">View all on Medium &rarr;</a>
+        </div>
+        
+        <!-- JS will inject the articles inside this grid -->
+        <div id="medium-articles" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Loading State -->
+            <p class="text-sm text-slate-500 animate-pulse">Fetching latest articles from Medium...</p>
+        </div>
+    </section>
+
+    <!-- Contact Section (Email Link Removed) -->
+    <section id="contact" class="bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 py-16 md:py-24 text-center">
+            <h2 class="text-3xl font-bold mb-5 tracking-tight">Let's Build Something Reliable.</h2>
+            <p class="text-slate-400 text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+                Whether you have a complex infrastructure challenge, a performance bottleneck, or are looking for a versatile DevOps Engineer who understands the full code lifecycle, my inbox is always open.
+            </p>
+            <div class="flex justify-center items-center">
+                <a href="https://www.linkedin.com/in/aditya-kumar-soni" target="_blank" class="bg-blue-600 text-white font-semibold px-8 py-3.5 rounded-lg shadow-sm hover:bg-blue-500 transition w-full sm:w-auto">
+                    Connect with me on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="max-w-5xl mx-auto px-4 py-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 Aditya Kumar Soni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
