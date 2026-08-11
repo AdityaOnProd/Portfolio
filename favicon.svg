@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="apex-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#0F172A" />
+  <!-- Stylized Geometric A -->
+  <path d="M256 96 L384 416 H312 L280 336 H232 L200 416 H128 L256 96 Z M256 216 L244 272 H268 L256 216 Z" fill="url(#apex-grad)" />
+</svg>
