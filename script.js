@@ -1,6 +1,47 @@
 // script.js
 
 // Function for the main Parent Accordion (Rotates the SVG Arrow)
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Grab all the sections and the navigation links
+    const sections = document.querySelectorAll("section[id], header[id]");
+    const navLinks = document.querySelectorAll("nav a[href^='#']");
+
+    // 2. Configure the Intersection Observer
+    const observerOptions = {
+        root: null,
+        rootMargin: "-20% 0px -60% 0px", // Adjusts when the section is considered "active"
+        threshold: 0
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const currentId = entry.target.getAttribute("id");
+                
+                // 3. Remove the active 'blue' state from all links
+                navLinks.forEach(link => {
+                    link.classList.remove("text-blue-600", "font-semibold");
+                    link.classList.add("text-slate-500");
+                });
+
+                // 4. Add the active 'blue' state to the currently viewed section's link
+                const activeLink = document.querySelector(`nav a[href="#${currentId}"]`);
+                if (activeLink) {
+                    activeLink.classList.remove("text-slate-500");
+                    activeLink.classList.add("text-blue-600", "font-semibold");
+                    
+                    // Bonus: On mobile, smoothly scroll the navbar horizontally so the active link is always visible
+                    activeLink.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+                }
+            }
+        });
+    }, observerOptions);
+
+    // 5. Tell the observer to watch every section
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+});
 function toggleAccordion(contentId, arrowId) {
     const content = document.getElementById(contentId);
     const arrow = document.getElementById(arrowId);
